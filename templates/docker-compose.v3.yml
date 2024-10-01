@@ -6,6 +6,7 @@ services:
     network_mode: host
     volumes:
       - /opt/postal/config:/config
+      - /etc/netplan/60-floating-ip.yaml:/etc/netplan/60-floating-ip.yaml
     restart: unless-stopped
 
   smtp:
